@@ -1,0 +1,18 @@
+@config "../../tailwind.config.mjs";
+
+@import "tailwindcss";
+@import "tailwind-animations";
+
+@layer base {
+  body { 
+    @apply bg-surface text-ink;
+  }
+
+  .font-display {
+    font-family: var(--font-display), ui-sans-serif, system-ui;
+  }
+
+  .font-body {
+    font-family: var(--font-body), ui-sans-serif, system-ui;
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "Metadata": {
+    "title": "Metal 3D Printing",
+    "description": "At Metal 3D Printing, we provide metal 3D printing services. We quote your project free of charge and manufacture it in record time using DMLS technology. We can produce your product, post-process it, and even package it with your logo."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services & Applications",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "WhatsAppFloat": {
+    "aria": "Open WhatsApp",
+    "title": "Message us",
+    "subtitle": "We’re here to help you"
+  },
+  "Hero": {
+    "kickers": [
+      "DMLS TECHNOLOGY",
+      "HIGH PRECISION",
+      "METAL ADDITIVE MANUFACTURING",
+      "RECORD LEAD TIMES"
+    ],
+    "title": "Metal 3D printing",
+    "subtitle": "Get a free quote. Record-time manufacturing with high-precision additive technology.",
+    "ctaMore": "Learn more",
+    "ctaContact": "Contact us"
+  },
+  "About": {
+    "kicker": "Who we are",
+    "title": "Metal 3D Printing",
+    "body": "Metal 3D Printing is a division of Bioprotece S.A., focused on advanced additive manufacturing and precision machining solutions for the Argentine and Latin American industry.\n\nFrom our facility in Villa Ballester, Buenos Aires, we integrate engineering, innovation, and cutting-edge technology to produce high-performance metal parts used across industrial, medical, energy, automotive, and aerospace sectors.",
+
+    "visionLabel": "Our Vision",
+    "visionTitle": "Deliver reliable solutions",
+    "visionBody": "Provide advanced additive manufacturing and precision machining solutions, delivering reliable high-performance metal parts manufactured under international quality standards.",
+
+    "missionLabel": "Our Mission",
+    "missionTitle": "Become the regional benchmark",
+    "missionBody": "Be the leading reference in Latin America for innovation and advanced metal manufacturing, enabling customers to optimize lead times, reduce costs, and boost competitiveness through additive technologies.",
+
+    "ctaServices": "Our services",
+    "ctaBrochure": "Download brochure",
+    "ctaHint": "PDF · Company profile",
+    "slideshowHint": "Facility, team and parts images (editable)."
+  },
+  "Services": {
+    "kicker": "Services",
+    "title": "Metal additive manufacturing + precision machining in one facility",
+    "body": "At Metal 3D Printing we help industries reduce downtime, avoid production stops and accelerate the development of critical parts through metal additive manufacturing and precision machining in the same plant.",
+    "subTitle": "Three key needs:",
+    "subBody": "our services solve real operational and supply challenges.",
+
+    "needsTitle": "Three key needs",
+    "needsBody": "Our services address three core needs across industrial operations:",
+
+    "needsCards": [
+      {
+        "title": "Urgent spare parts for production lines",
+        "body": "We manufacture critical metal parts when the original spare is unavailable, discontinued, \nor has long lead times. Metal 3D printing delivers functional components in hours or days,\npreventing operational losses."
+      },
+      {
+        "title": "Complex parts that CNC cannot produce",
+        "body": "We create internal geometries, hidden channels, organic curves,\nand lightweight structures not feasible with traditional methods—while maintaining\nstrength and dimensional accuracy."
+      },
+      {
+        "title": "Functional prototypes and short runs without molds",
+        "body": "We produce titanium or steel parts without tooling, enabling faster validation, \n rapid iteration, and short-run manufacturing with significantly reduced lead times."
+      }
+    ],
+
+    "processTitle": "End-to-end, in one place",
+    "processBody": "We combine engineering, metal 3D printing and post-processing to deliver parts ready to use.",
+    "processHint": "We can tailor the workflow to your material, tolerances and quality requirements.",
+
+    "processCards": [
+      {
+        "title": "Engineering",
+        "body": "We support your design, validate\nSTL dimensions and develop test pieces prior to the final \n production print."
+      },
+      {
+        "title": "3D Printing",
+        "body": "We operate three state-of-the-art DMLS printers and provide \n material certificates\nupon request."
+      },
+      {
+        "title": "Post-Processing",
+        "body": "In-house finishing options: polishing,\nlaser logo engraving, anodizing for color, and even packaging with your brand."
+      }
+    ],
+
+    "industriesTitle": "3D-printed metal parts",
+    "industriesBody": "Examples of sectors where metal additive manufacturing delivers immediate value.",
+
+    "sectors": [
+      {
+        "title": "OIL & GAS",
+        "body": "Corrosion-resistant parts, complex geometries and critical spares to keep operations running."
+      },
+      {
+        "title": "AUTOMOTIVE / MACHINERY",
+        "body": "Fixtures, validation parts and functional components to speed up iterations and reduce stops."
+      },
+      {
+        "title": "CHEMICAL / FOOD / PHARMA",
+        "body": "Sanitary parts and critical line spares with a focus on quality, precision and process compatibility."
+      },
+      {
+        "title": "AEROSPACE / DRONES / TECHNOLOGY",
+        "body": "Lightweight structures, optimized supports and metal housings for sensors and systems."
+      }
+    ]
+  },
+  "Work": {
+    "kicker": "Project Gallery",
+    "title": "Work",
+    "subtitle": "Real projects produced in record time using a wide range of biocompatible materials"
+  },
+  "Contact": {
+    "kicker": "Contact",
+    "title": "Let’s talk about your project",
+    "subtitle": "Tell us what you need to manufacture. We’ll advise you at no cost and reply shortly.",
+
+    "formTitle": "Contact form",
+    "formHint": "Fields marked with * are required.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "+54 11 1234 5678",
+    "preferred": "I want to be contacted via:",
+    "preferredEmail": "Email",
+    "preferredWhatsapp": "WhatsApp",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your part, material, tolerances and deadlines…",
+    "submit": "Send inquiry",
+    "privacyNote": "Your details will never be used to contact you without your consent.",
+
+    "sending": "Sending...",
+    "success": "Done! We received your message. We'll get back to you shortly.",
+    "error": "Couldn’t send your message. Please try again in a few minutes.",
+
+    "visitTitle": "Visit us",
+    "visitBody": "Our plant is open so you can see the production process and we can discuss your printing project.",
+
+    "addressLabel": "Location",
+    "addressValue": "Vicente López 4334, Villa Ballester",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Fri 7:00 AM – 4:00 PM",
+
+    "ctaWhatsapp": "Message us on WhatsApp",
+    "ctaEmail": "Send us an email",
+
+    "footerNote": "If you prefer, message us on WhatsApp or email and we’ll reply on the next business day."
+  },
+  "Footer": {
+    "contactTitle": "Contact",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "+54 9 11 3364 7947",
+    "addressLabel": "Location",
+    "addressValue": "Vicente López 4334, Villa Ballester",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Fri 7:00 AM – 4:00 PM",
+    "backToTop": "Back to top",
+    "creditsPrefix": "designed and developed by"
+  }
+}

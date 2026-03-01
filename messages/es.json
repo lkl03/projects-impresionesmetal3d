@@ -1,0 +1,169 @@
+{
+  "Metadata": {
+    "title": "Impresión Metal 3D | Impresión 3D en Metales",
+    "description": "En Impresión Metal 3D, ofrecemos servicios de impresión 3D en metales, cotizamos tu proyecto sin cargo y lo fabricamos en tiempo récord con tecnología DMLS. Ofrecemos fabricar tu producto, post procesarlo y hasta envasarlo con tu logo."
+  },
+  "Nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios y Aplicaciones",
+    "work": "Trabajos",
+    "contact": "Contactanos"
+  },
+  "WhatsAppFloat": {
+    "aria": "Abrir WhatsApp",
+    "title": "Escribinos",
+    "subtitle": "Estamos para ayudarte"
+  },
+  "Hero": {
+    "kickers": [
+      "TECNOLOGÍA DMLS",
+      "ALTA PRECISIÓN",
+      "FABRICACIÓN ADITIVA EN METAL",
+      "TIEMPOS DE ENTREGA RÉCORD"
+    ],
+    "title": "Impresión 3D en metales",
+    "subtitle": "Cotizá tu proyecto sin cargo. Fabricación en tiempo récord con manufactura aditiva de alta precisión.",
+    "ctaMore": "Conocer más",
+    "ctaContact": "Contactanos"
+  },
+  "About": {
+    "kicker": "Quiénes somos",
+    "title": "Impresión Metal 3D",
+    "body": "Impresión Metal 3D es una división de Bioprotece S.A., dedicada a brindar soluciones avanzadas de fabricación aditiva y mecanizado de precisión para la industria argentina y latinoamericana.\n\nDesde nuestra planta en Villa Ballester, Buenos Aires, integramos ingeniería, innovación y tecnología de punta para producir piezas metálicas de alta performance utilizadas en sectores industriales, médicos, energéticos, automotrices y aeroespaciales.",
+
+    "visionLabel": "Nuestra Visión",
+    "visionTitle": "Proveer soluciones confiables",
+    "visionBody": "Proveer soluciones de fabricación aditiva avanzada y mecanizado de precisión, ofreciendo piezas metálicas confiables, de alto rendimiento y fabricadas bajo estándares de calidad internacional.",
+
+    "missionLabel": "Nuestra Misión",
+    "missionTitle": "Ser el referente regional",
+    "missionBody": "Ser el referente regional en Latinoamérica en innovación y manufactura avanzada en metal, impulsando la industria a través de tecnologías aditivas que permitan optimizar tiempos, reducir costos y potenciar la competitividad de nuestros clientes.",
+
+    "ctaServices": "Nuestros servicios",
+    "ctaBrochure": "Descargar brochure",
+    "ctaHint": "PDF · Institucional",
+    "slideshowHint": "Imágenes de planta, equipo y piezas (editable)."
+  },
+  "Services": {
+    "kicker": "Servicios",
+    "title": "Fabricación aditiva metálica + mecanizado en la misma planta",
+    "body": "En Impresión Metal 3D ayudamos a las industrias a reducir tiempos muertos, evitar paradas de producción y acelerar el desarrollo de piezas críticas, mediante fabricación aditiva metálica y mecanizado de precisión en la misma planta.",
+    "subTitle": "Tres necesidades clave:",
+    "subBody": "nuestros servicios resuelven problemas reales de operación y abastecimiento.",
+
+    "needsTitle": "Tres necesidades clave",
+    "needsBody": "Nuestros servicios resuelven tres necesidades clave del sector industrial:",
+
+    "needsCards": [
+      {
+        "title": "Repuestos urgentes para líneas de producción",
+        "body": "Fabricamos piezas metálicas críticas cuando el repuesto original no está\ndisponible, está discontinuado o su entrega demora semanas.\nLa impresión 3D en metal permite obtener componentes funcionales\nen cuestión de horas o días, evitando pérdidas operativas."
+      },
+      {
+        "title": "Piezas complejas que no pueden fabricarse con CNC",
+        "body": "Realizamos geometrías internas, canales ocultos, curvaturas orgánicas o \n estructuras livianas imposibles por métodos tradicionales, manteniendo \nsiempre alta resistencia y precisión dimensional."
+      },
+      {
+        "title": "Prototipos funcionales y series cortas sin necesidad de moldes",
+        "body": "Producimos piezas metálicas en titanio o acero sin necesidad de matrices \n ni herramentales, lo que permite validar diseños, iterar más rápido y fabricar \n series cortas con tiempos de entrega significativamente reducidos."
+      }
+    ],
+
+    "processTitle": "De punta a punta, en un solo lugar",
+    "processBody": "Integramos ingeniería, impresión 3D en metal y post-proceso para entregar piezas listas para usar.",
+    "processHint": "Podemos adaptar el flujo según material, tolerancias y requerimientos de calidad.",
+
+    "processCards": [
+      {
+        "title": "Ingeniería",
+        "body": "Desarrollamos tu diseño, controlamos las dimensiones de tu STL y desarrollamos probetas anteriores a la impresión definitiva."
+      },
+      {
+        "title": "Impresión 3D",
+        "body": "Contamos con 3 impresoras 3D DMLS de última generación,\n con certificados de materia prima a\ndisposición del cliente."
+      },
+      {
+        "title": "Post Proceso",
+        "body": "Contamos en el mismo recinto con la\nopción de pulir tu pieza, grabar tu\nlogo en láser, anodizarla para darle\ncolor y hasta envasarla con tu marca."
+      }
+    ],
+
+    "industriesTitle": "Piezas fabricadas en 3D",
+    "industriesBody": "Algunos ejemplos de rubros donde la fabricación aditiva en metal aporta valor de forma inmediata.",
+
+    "sectors": [
+      {
+        "title": "OIL & GAS",
+        "body": "Componentes resistentes a corrosión, geometrías complejas y repuestos críticos para operación continua."
+      },
+      {
+        "title": "AUTOMOTRIZ / MAQUINARIA",
+        "body": "Utillajes, piezas de validación y componentes funcionales para acelerar iteraciones y reducir paradas."
+      },
+      {
+        "title": "QUÍMICA / ALIMENTICIA / FARMACÉUTICA",
+        "body": "Piezas sanitarias y repuestos críticos con foco en calidad, precisión y compatibilidad de procesos."
+      },
+      {
+        "title": "AEROESPACIAL / DRONES / TECNOLOGÍA",
+        "body": "Estructuras livianas, soportes optimizados y carcasas metálicas para sensores y sistemas."
+      }
+    ]
+  },
+  "Work": {
+    "kicker": "Galería de Proyectos",
+    "title": "Trabajos",
+    "subtitle": "Proyectos reales fabricados en tiempo récord con diversos materiales biocompatibles"
+  },
+  "Contact": {
+    "kicker": "Contacto",
+    "title": "Hablemos de tu proyecto",
+    "subtitle": "Contanos qué necesitás fabricar. Te asesoramos sin cargo y te respondemos a la brevedad.",
+
+    "formTitle": "Formulario de contacto",
+    "formHint": "Campos con * son obligatorios.",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo",
+    "emailPlaceholder": "tu@correo.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "+54 11 1234 5678",
+    "preferred": "Quiero ser contactado a través de:",
+    "preferredEmail": "Correo",
+    "preferredWhatsapp": "WhatsApp",
+    "message": "Mensaje",
+    "messagePlaceholder": "Contanos sobre tu pieza, material, tolerancias y tiempos…",
+    "submit": "Enviar consulta",
+    "privacyNote": "Tus datos nunca van a ser usados para llamarte sin avisar.",
+
+    "sending": "Enviando...",
+    "success": "¡Listo! Recibimos tu consulta. Te respondemos a la brevedad.",
+    "error": "No se pudo enviar. Probá de nuevo en unos minutos.",
+
+    "visitTitle": "Visitanos",
+    "visitBody": "La fábrica está abierta para que visites el proceso productivo y podamos discutir tu proyecto de impresión.",
+
+    "addressLabel": "Ubicación",
+    "addressValue": "Vicente López 4334, Villa Ballester",
+    "hoursLabel": "Horarios",
+    "hoursValue": "Lun a Vie 7:00 - 16:00hs",
+
+    "ctaWhatsapp": "Escribinos por WhatsApp",
+    "ctaEmail": "Envianos un email",
+
+    "footerNote": "Si preferís, podés escribirnos por WhatsApp o correo y te respondemos en el día hábil."
+  },
+  "Footer": {
+    "contactTitle": "Contacto",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "+54 9 11 3364 7947",
+    "addressLabel": "Ubicación",
+    "addressValue": "Vicente López 4334, Villa Ballester",
+    "hoursLabel": "Horarios",
+    "hoursValue": "Lun a Vie 7:00 - 16:00hs",
+    "backToTop": "Volver arriba",
+    "creditsPrefix": "diseñado y desarrollado por"
+  }
+}
