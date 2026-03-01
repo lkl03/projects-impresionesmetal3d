@@ -40,7 +40,7 @@ export default function Header() {
       { href: hash(ids.about), label: t('about') },
       { href: hash(ids.services), label: t('services') },
       { href: hash(ids.work), label: t('work') },
-      { href: hash(ids.contact), label: t('contact') }
+      { href: hash(ids.faq), label: t('faq') },
     ],
     [t, ids]
   );
@@ -52,11 +52,25 @@ export default function Header() {
     router.replace(pathname, { locale: next });
   }
 
+  // ✅ Home puede ser "/" o "/es" o "/en" dependiendo de tu config.
+  const isHome = pathname === '/' || pathname === `/${locale}`;
+
   function onNavClick(href: string) {
     setMobileOpen(false);
-    requestAnimationFrame(() => {
-      window.location.hash = href.replace('#', '');
-    });
+
+    // href viene como "#faq", "#trabajos", etc.
+    const hashOnly = href.startsWith('#') ? href : `#${href}`;
+
+    if (isHome) {
+      // En home: solo actualizamos el hash
+      requestAnimationFrame(() => {
+        window.location.hash = hashOnly.replace('#', '');
+      });
+      return;
+    }
+
+    // En cualquier otra página (ej: /areas): volvemos a la home con hash
+    router.push('/' + hashOnly); // => "/#faq" (locale-aware via next-intl router)
   }
 
   return (
@@ -71,11 +85,13 @@ export default function Header() {
       <div className="mx-auto w-full max-w-screen-2xl 3xl:max-w-[1760px] px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         {/* DESKTOP (>= sm): logo centrado + nav debajo */}
         <div className="hidden sm:flex flex-col items-center gap-3">
-          <a
-            href={hash(ids.home)}
+          {/* ✅ Logo: NO usar <a href="#home"> porque en /areas te queda /areas#home */}
+          <button
+            type="button"
+            onClick={() => onNavClick(hash(ids.home))}
             aria-label="Bioprotece3D"
             className={cn(
-              'select-none transition-transform duration-300 hover:scale-[1.01] active:scale-[0.99]',
+              'cursor-pointer select-none transition-transform duration-300 hover:scale-[1.01] active:scale-[0.99]',
               'motion-safe:animate-fade-in-up'
             )}
           >
@@ -87,7 +103,7 @@ export default function Header() {
               priority
               className={cn('h-10 w-auto sm:h-11', 'transition-opacity duration-300')}
             />
-          </a>
+          </button>
 
           <nav
             className={cn(
@@ -96,18 +112,20 @@ export default function Header() {
               'motion-safe:animate-fade-in-up'
             )}
           >
+            {/* ✅ Desktop links: usar button para que SIEMPRE ejecute onNavClick */}
             {links.map((l) => (
-              <a
+              <button
                 key={l.href}
-                href={l.href}
+                type="button"
+                onClick={() => onNavClick(l.href)}
                 className={cn(
-                  'relative py-1 transition-opacity hover:opacity-90',
+                  'cursor-pointer relative py-1 transition-opacity hover:opacity-90',
                   'after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:transition-all after:duration-300',
                   scrolled ? 'after:bg-brand-navy/40 hover:after:w-full' : 'after:bg-white/50 hover:after:w-full'
                 )}
               >
                 {l.label}
-              </a>
+              </button>
             ))}
 
             <span className={cn('mx-2 h-4 w-px', divider)} />
@@ -120,7 +138,13 @@ export default function Header() {
                 aria-current={locale === 'es' ? 'page' : undefined}
                 className={cn(
                   'cursor-pointer font-display text-xs tracking-[0.2em] uppercase transition-opacity hover:opacity-90',
-                  locale === 'es' ? (scrolled ? 'text-brand-navy' : 'text-white') : (scrolled ? 'text-brand-navy/50' : 'text-white/50')
+                  locale === 'es'
+                    ? scrolled
+                      ? 'text-brand-navy'
+                      : 'text-white'
+                    : scrolled
+                      ? 'text-brand-navy/50'
+                      : 'text-white/50'
                 )}
               >
                 ES
@@ -134,7 +158,13 @@ export default function Header() {
                 aria-current={locale === 'en' ? 'page' : undefined}
                 className={cn(
                   'cursor-pointer font-display text-xs tracking-[0.2em] uppercase transition-opacity hover:opacity-90',
-                  locale === 'en' ? (scrolled ? 'text-brand-navy' : 'text-white') : (scrolled ? 'text-brand-navy/50' : 'text-white/50')
+                  locale === 'en'
+                    ? scrolled
+                      ? 'text-brand-navy'
+                      : 'text-white'
+                    : scrolled
+                      ? 'text-brand-navy/50'
+                      : 'text-white/50'
                 )}
               >
                 EN
@@ -145,7 +175,13 @@ export default function Header() {
 
         {/* MOBILE (< sm): logo izquierda + ES/EN visible + hamburger derecha */}
         <div className="sm:hidden flex items-center justify-between gap-3">
-          <a href={hash(ids.home)} aria-label="Bioprotece3D" className="flex items-center">
+          {/* ✅ Mobile logo también debe usar onNavClick */}
+          <button
+            type="button"
+            onClick={() => onNavClick(hash(ids.home))}
+            aria-label="Bioprotece3D"
+            className="cursor-pointer flex items-center"
+          >
             <span className="relative block h-9 w-[140px]">
               <Image
                 src="/logo-white.png"
@@ -168,7 +204,7 @@ export default function Header() {
                 )}
               />
             </span>
-          </a>
+          </button>
 
           <div className="flex items-center gap-3">
             {/* Language switch always visible */}
@@ -179,7 +215,13 @@ export default function Header() {
                 aria-current={locale === 'es' ? 'page' : undefined}
                 className={cn(
                   'cursor-pointer font-display text-xs tracking-[0.2em] uppercase transition-opacity hover:opacity-90',
-                  locale === 'es' ? (scrolled ? 'text-brand-navy' : 'text-white') : (scrolled ? 'text-brand-navy/50' : 'text-white/50')
+                  locale === 'es'
+                    ? scrolled
+                      ? 'text-brand-navy'
+                      : 'text-white'
+                    : scrolled
+                      ? 'text-brand-navy/50'
+                      : 'text-white/50'
                 )}
               >
                 ES
@@ -193,7 +235,13 @@ export default function Header() {
                 aria-current={locale === 'en' ? 'page' : undefined}
                 className={cn(
                   'cursor-pointer font-display text-xs tracking-[0.2em] uppercase transition-opacity hover:opacity-90',
-                  locale === 'en' ? (scrolled ? 'text-brand-navy' : 'text-white') : (scrolled ? 'text-brand-navy/50' : 'text-white/50')
+                  locale === 'en'
+                    ? scrolled
+                      ? 'text-brand-navy'
+                      : 'text-white'
+                    : scrolled
+                      ? 'text-brand-navy/50'
+                      : 'text-white/50'
                 )}
               >
                 EN
@@ -261,9 +309,7 @@ export default function Header() {
           )}
         >
           <div className="flex items-center justify-between px-5 py-4 border-b border-black/5">
-            <span className="font-display text-sm tracking-[0.2em] uppercase text-brand-navy/70">
-              Menu
-            </span>
+            <span className="font-display text-sm tracking-[0.2em] uppercase text-brand-navy/70">Menu</span>
             <button
               type="button"
               aria-label="Cerrar menú"

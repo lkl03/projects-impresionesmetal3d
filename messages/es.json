@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Impresión Metal 3D | Impresión 3D en Metales",
+    "title": "Impresión Metal 3D",
     "description": "En Impresión Metal 3D, ofrecemos servicios de impresión 3D en metales, cotizamos tu proyecto sin cargo y lo fabricamos en tiempo récord con tecnología DMLS. Ofrecemos fabricar tu producto, post procesarlo y hasta envasarlo con tu logo."
   },
   "Nav": {
@@ -8,6 +8,7 @@
     "about": "Sobre Nosotros",
     "services": "Servicios y Aplicaciones",
     "work": "Trabajos",
+    "faq": "Preguntas frecuentes",
     "contact": "Contactanos"
   },
   "WhatsAppFloat": {
@@ -51,6 +52,7 @@
     "body": "En Impresión Metal 3D ayudamos a las industrias a reducir tiempos muertos, evitar paradas de producción y acelerar el desarrollo de piezas críticas, mediante fabricación aditiva metálica y mecanizado de precisión en la misma planta.",
     "subTitle": "Tres necesidades clave:",
     "subBody": "nuestros servicios resuelven problemas reales de operación y abastecimiento.",
+    "seeMore": "Ver más",
 
     "needsTitle": "Tres necesidades clave",
     "needsBody": "Nuestros servicios resuelven tres necesidades clave del sector industrial:",
@@ -116,6 +118,42 @@
     "title": "Trabajos",
     "subtitle": "Proyectos reales fabricados en tiempo récord con diversos materiales biocompatibles"
   },
+  "Faq": {
+    "kicker": "CONSULTAS",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Respuestas rápidas a las consultas más comunes sobre impresión 3D en metales.",
+    "placeholder": "Seleccioná una consulta para ver la respuesta.",
+    "items": [
+      {
+        "q": "¿La zona de fusión qué tamaño de pieza puede conformar (largo, ancho y alto)?",
+        "a": "El área de impresión de nuestras impresoras 3D más grandes es de 26 cm de largo por 26 cm de ancho, con una altura máxima de 32 cm."
+      },
+      {
+        "q": "¿Qué materiales podemos trabajar?",
+        "a": "Podemos utilizar polvos de acero como el acero inoxidable 316L, acero grado médico y acero maraging.\n\nNuestro fuerte es el titanio grado 5: resistente a la corrosión, a la temperatura sin deformaciones, soporta fuerzas de carga altas y es altamente biocompatible.\n\nAdemás, nuestras impresoras son compatibles para fabricar piezas en aluminio, cromo cobalto, aleaciones de cobre y aleaciones de níquel."
+      },
+      {
+        "q": "¿Qué tipo de piezas podemos fabricar?",
+        "a": "Podemos fabricar cualquier tipo de piezas según los requerimientos del cliente.\n\nAlgunos ejemplos son:\n\nPara la industria del petróleo y gas:\n● Impellers (turbinas)\n● Álabes\n● Válvulas y bridas\n● Carcazas complejas\n● Manifolds\n● Boquillas e inyectores\n● Piezas resistentes a la corrosión\n● Componentes de robots\n\nPara la industria automotriz/maquinaria:\n● Jigs\n● Herramientas de línea\n● Soportes y brackets\n● Prototipos funcionales\n● Carcasas y piezas de validación\n● Elementos internos de motores\n● Válvulas\n\nPara la industria química/alimenticia/farmacéutica:\n● Componentes sanitarios\n● Adaptadores CIP/SIP\n● Uniones especiales\n● Repuestos críticos de línea\n\nPara la industria aeroespacial/drones:\n● Estructuras livianas\n● Soportes optimizados\n● Carcazas metálicas de sensores\n● Impellers\n● Soportes para drones"
+      },
+      {
+        "q": "¿Qué tolerancias y dimensiones mínimas de fabricación se puede ofrecer?",
+        "a": "El espesor mínimo que recomendamos fabricar es de 1 mm.\n\nTolerancia dimensional: ±0,1 mm para dimensiones menores a 100 mm. Para dimensiones mayores, suele aplicarse una regla de ±0,1 % del tamaño nominal.\nEspesor mínimo de pared: 0,3 mm (aunque depende del material).\nDiámetro mínimo de agujero imprimible: generalmente 0,5 mm como mínimo confiable.\nRugosidad superficial: Ra ~ 8–15 µm en bruto (depende de altura de capa).\nPlanitud de superficies: ±0,2 mm."
+      },
+      {
+        "q": "¿Qué terminación superficial se puede obtener con este proceso?",
+        "a": "La terminación superficial depende de los requerimientos del cliente. Podemos realizar tres: porosa, pulido mate o pulido espejo brillante."
+      },
+      {
+        "q": "¿La ingeniería de la pieza la debe proporcionar el cliente?",
+        "a": "Siempre recomendamos que el cliente proporcione la ingeniería a su gusto, para poder establecer requerimientos, controles de calidad, parámetros, etcétera.\n\nSin embargo, contamos con un equipo profesional de ingeniería in situ para poder asesorar al cliente en los proyectos."
+      },
+      {
+        "q": "¿Dónde puedo ver fotos y videos de piezas fabricadas?",
+        "a": "Podés ver fotos y videos de piezas fabricadas acá: https://www.bioprotece3d.com/es\n\nLa mayoría de piezas recientes están bajo acuerdo de confidencialidad, pero en esa web vas a encontrar las piezas que se pueden mostrar libres de derechos."
+      }
+    ]
+  },
   "Contact": {
     "kicker": "Contacto",
     "title": "Hablemos de tu proyecto",
@@ -165,5 +203,33 @@
     "hoursValue": "Lun a Vie 7:00 - 16:00hs",
     "backToTop": "Volver arriba",
     "creditsPrefix": "diseñado y desarrollado por"
+  },
+  "Areas": {
+    "kicker": "ÁREAS",
+    "title": "Áreas de aplicación",
+    "subtitle": "Galería de piezas (ejemplos) agrupadas por industria.",
+    "back": "Volver al inicio",
+    "groups": {
+      "oilGas": {
+        "title": "Industria del petróleo y gas",
+        "short": "Oil & Gas",
+        "body": "Impellers, álabes, válvulas, bridas, manifolds, boquillas e inyectores, piezas resistentes a la corrosión y componentes de robots."
+      },
+      "automotive": {
+        "title": "Industria automotriz / maquinaria",
+        "short": "Automotriz",
+        "body": "Jigs, herramientas de línea, soportes y brackets, prototipos funcionales, carcasas y piezas de validación, elementos internos de motores y válvulas."
+      },
+      "chemical": {
+        "title": "Industria química / alimenticia / farmacéutica",
+        "short": "Química",
+        "body": "Componentes sanitarios, adaptadores CIP/SIP, uniones especiales y repuestos críticos de línea."
+      },
+      "aerospace": {
+        "title": "Industria aeroespacial / drones",
+        "short": "Aeroespacial",
+        "body": "Estructuras livianas, soportes optimizados, carcasas metálicas de sensores, impellers y soportes para drones."
+      }
+    }
   }
 }

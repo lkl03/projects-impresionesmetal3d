@@ -6,6 +6,7 @@ export const SECTION_IDS = {
     about: 'nosotros',
     services: 'servicios',
     work: 'trabajos',
+    faq: 'faq',
     contact: 'contacto'
   },
   en: {
@@ -13,6 +14,7 @@ export const SECTION_IDS = {
     about: 'about',
     services: 'services',
     work: 'work',
+    faq: 'faq',
     contact: 'contact'
   }
 } as const;

@@ -123,9 +123,6 @@ export default function Hero() {
             <Button asChild variant="primary" href={hash(ids.about)}>
               {t('ctaMore')}
             </Button>
-            <Button asChild variant="secondary" href={hash(ids.contact)}>
-              {t('ctaContact')}
-            </Button>
           </div>
         </div>
       </div>

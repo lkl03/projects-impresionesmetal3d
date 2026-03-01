@@ -4,6 +4,7 @@ import Hero from '../components/site/Hero';
 import About from '../components/site/About';
 import Services from '../components/site/Services';
 import WorkGallery from '../components/site/WorkGallery';
+import Faq from '../components/site/Faq';
 import Contact from '../components/site/Contact';
 import Footer from '../components/site/Footer';
 
@@ -17,7 +18,7 @@ export default function HomePage({params}: {params: Promise<{locale: string}>}) 
       <About />
       <Services />
       <WorkGallery />
-      <Contact />
+      <Faq />
       <Footer />
     </main>
   );

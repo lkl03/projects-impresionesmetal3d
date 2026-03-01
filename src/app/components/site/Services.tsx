@@ -5,6 +5,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { cn } from '@/app/lib/cn';
 import { getSectionIds, type Locale } from '@/app/lib/sections';
+import { useRouter } from '@/i18n/navigation';
+import { Button } from '@/app/components/ui/button';
 
 type CardData = { title: string; body: string };
 type Sector = { title: string; body: string; imageSrc: string };
@@ -31,6 +33,7 @@ function RevealCard({
   className?: string;
 }) {
   const show = pinned || (supportsHover && hovered);
+
 
   return (
     <button
@@ -212,6 +215,8 @@ export default function Services() {
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
+
+  const router = useRouter();
 
   return (
     <section id={ids.services} className="bg-surface-muted">
@@ -407,6 +412,17 @@ export default function Services() {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-8 flex w-full justify-center">
+  <Button
+    context="light"
+    variant="secondary"
+    onClick={() => router.push('/areas')}
+    className="cursor-pointer"
+  >
+    {t('seeMore')}
+  </Button>
+</div>
             </div>
           </div>
 

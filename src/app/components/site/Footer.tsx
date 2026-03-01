@@ -78,57 +78,6 @@ export default function Footer() {
             </div>
 
             {/* Middle: Contact details */}
-            <div className="md:basis-1/3">
-              <p className="font-display text-sm font-semibold text-brand-navy text-center">
-                {t('contactTitle')}
-              </p>
-
-              <div className="mt-4 space-y-3 text-sm text-ink-muted text-center">
-                <div className="flex flex-col gap-1">
-                  <span className="text-xs uppercase tracking-[0.18em] text-ink-muted/80">
-                    {t('emailLabel')}
-                  </span>
-                  <a
-                    href={emailHref}
-                    className="text-brand-navy hover:opacity-90 transition-opacity"
-                  >
-                    {emailValue}
-                  </a>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                  <span className="text-xs uppercase tracking-[0.18em] text-ink-muted/80">
-                    {t('whatsappLabel')}
-                  </span>
-                  <a
-                    href={whatsappHref}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-brand-navy hover:opacity-90 transition-opacity"
-                  >
-                    {t('whatsappValue')}
-                  </a>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                  <span className="text-xs uppercase tracking-[0.18em] text-ink-muted/80">
-                    {t('addressLabel')}
-                  </span>
-                  <span className="text-ink-muted">
-                    {t('addressValue')}
-                  </span>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                  <span className="text-xs uppercase tracking-[0.18em] text-ink-muted/80">
-                    {t('hoursLabel')}
-                  </span>
-                  <span className="text-ink-muted">
-                    {t('hoursValue')}
-                  </span>
-                </div>
-              </div>
-            </div>
 
             {/* Right: Back to top */}
             <div className="md:basis-1/3 md:flex md:justify-end self-start md:self-auto">
