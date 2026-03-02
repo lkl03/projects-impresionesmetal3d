@@ -182,10 +182,10 @@ export default function Services() {
 
   const sectors: Sector[] = useMemo(
     () => [
-      { title: t('sectors.0.title'), body: t('sectors.0.body'), imageSrc: '/services/oil-gas.jpg' },
-      { title: t('sectors.1.title'), body: t('sectors.1.body'), imageSrc: '/services/automotriz.png' },
-      { title: t('sectors.2.title'), body: t('sectors.2.body'), imageSrc: '/services/quimica.png' },
-      { title: t('sectors.3.title'), body: t('sectors.3.body'), imageSrc: '/services/aero.png' }
+      { title: t('sectors.0.title'), body: t('sectors.0.body'), imageSrc: '/services/oil-gas-alt.png' },
+      { title: t('sectors.1.title'), body: t('sectors.1.body'), imageSrc: '/services/automotriz-alt.jpeg' },
+      { title: t('sectors.2.title'), body: t('sectors.2.body'), imageSrc: '/services/quimica-alt.webp' },
+      { title: t('sectors.3.title'), body: t('sectors.3.body'), imageSrc: '/services/aero-alt.jpeg' }
     ],
     [t]
   );

@@ -40,28 +40,28 @@ export default function AreasGallery() {
         title: t('groups.oilGas.title'),
         short: t('groups.oilGas.short'),
         items: (t.raw('groups.oilGas.items') as string[]) ?? [],
-        image: { src: '/services/oil-gas.jpg', alt: t('groups.oilGas.short') }
+        image: { src: '/services/oil-gas-alt.png', alt: t('groups.oilGas.short') }
       },
       {
         id: 'automotriz',
         title: t('groups.automotive.title'),
         short: t('groups.automotive.short'),
         items: (t.raw('groups.automotive.items') as string[]) ?? [],
-        image: { src: '/services/automotriz.png', alt: t('groups.automotive.short') }
+        image: { src: '/services/automotriz-alt.jpeg', alt: t('groups.automotive.short') }
       },
       {
         id: 'quimica',
         title: t('groups.chemical.title'),
         short: t('groups.chemical.short'),
         items: (t.raw('groups.chemical.items') as string[]) ?? [],
-        image: { src: '/services/quimica.png', alt: t('groups.chemical.short') }
+        image: { src: '/services/quimica-alt.webp', alt: t('groups.chemical.short') }
       },
       {
         id: 'aero',
         title: t('groups.aerospace.title'),
         short: t('groups.aerospace.short'),
         items: (t.raw('groups.aerospace.items') as string[]) ?? [],
-        image: { src: '/services/aero.png', alt: t('groups.aerospace.short') }
+        image: { src: '/services/aero-alt.jpeg', alt: t('groups.aerospace.short') }
       }
     ],
     [t]
