@@ -196,31 +196,59 @@
     "creditsPrefix": "diseñado y desarrollado por"
   },
   "Areas": {
-    "kicker": "ÁREAS",
-    "title": "Áreas de aplicación",
-    "subtitle": "Galería de piezas (ejemplos) agrupadas por industria.",
-    "back": "Volver al inicio",
-    "groups": {
-      "oilGas": {
-        "title": "Industria del petróleo y gas",
-        "short": "Oil & Gas",
-        "body": "Impellers, álabes, válvulas, bridas, manifolds, boquillas e inyectores, piezas resistentes a la corrosión y componentes de robots."
-      },
-      "automotive": {
-        "title": "Industria automotriz / maquinaria",
-        "short": "Automotriz",
-        "body": "Jigs, herramientas de línea, soportes y brackets, prototipos funcionales, carcasas y piezas de validación, elementos internos de motores y válvulas."
-      },
-      "chemical": {
-        "title": "Industria química / alimenticia / farmacéutica",
-        "short": "Química",
-        "body": "Componentes sanitarios, adaptadores CIP/SIP, uniones especiales y repuestos críticos de línea."
-      },
-      "aerospace": {
-        "title": "Industria aeroespacial / drones",
-        "short": "Aeroespacial",
-        "body": "Estructuras livianas, soportes optimizados, carcasas metálicas de sensores, impellers y soportes para drones."
-      }
+  "kicker": "ÁREAS",
+  "title": "Áreas de aplicación",
+  "subtitle": "Galería de piezas (ejemplos) agrupadas por industria.",
+  "back": "Volver al inicio",
+  "groups": {
+    "oilGas": {
+      "title": "Industria del petróleo y gas",
+      "short": "OIL & GAS",
+      "items": [
+        "Impellers (turbinas)",
+        "Álabes",
+        "Válvulas y bridas",
+        "Carcazas complejas",
+        "Manifolds",
+        "Boquillas e inyectores",
+        "Piezas resistentes a la corrosión",
+        "Componentes de robots"
+      ]
+    },
+    "automotive": {
+      "title": "Industria automotriz / maquinaria",
+      "short": "AUTOMOTRIZ / MAQUINARIA",
+      "items": [
+        "Jigs",
+        "Herramientas de línea",
+        "Soportes y brackets",
+        "Prototipos funcionales",
+        "Carcasas y piezas de validación",
+        "Elementos internos de motores",
+        "Válvulas"
+      ]
+    },
+    "chemical": {
+      "title": "Industria química / alimenticia / farmacéutica",
+      "short": "QUÍMICA / ALIMENTICIA / FARMACÉUTICA",
+      "items": [
+        "Componentes sanitarios",
+        "Adaptadores CIP/SIP",
+        "Uniones especiales",
+        "Repuestos críticos de línea"
+      ]
+    },
+    "aerospace": {
+      "title": "Industria aeroespacial / drones / tecnología",
+      "short": "AEROESPACIAL / DRONES / TECNOLOGÍA",
+      "items": [
+        "Estructuras livianas",
+        "Soportes optimizados",
+        "Carcasas metálicas de sensores",
+        "Impellers",
+        "Soportes para drones"
+      ]
     }
   }
+}
 }

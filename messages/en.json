@@ -196,31 +196,59 @@
     "creditsPrefix": "designed and developed by"
   },
   "Areas": {
-    "kicker": "AREAS",
-    "title": "Application areas",
-    "subtitle": "Sample parts gallery grouped by industry.",
-    "back": "Back to home",
-    "groups": {
-      "oilGas": {
-        "title": "Oil & gas industry",
-        "short": "Oil & Gas",
-        "body": "Impellers, blades/vanes, valves, flanges, manifolds, nozzles and injectors, corrosion-resistant parts, and robot components."
-      },
-      "automotive": {
-        "title": "Automotive / machinery",
-        "short": "Automotive",
-        "body": "Jigs, line tooling, supports and brackets, functional prototypes, housings and validation parts, internal engine elements, and valves."
-      },
-      "chemical": {
-        "title": "Chemical / food / pharmaceutical",
-        "short": "Chemical",
-        "body": "Sanitary components, CIP/SIP adapters, special joints, and critical line spare parts."
-      },
-      "aerospace": {
-        "title": "Aerospace / drones",
-        "short": "Aerospace",
-        "body": "Lightweight structures, optimized supports, metal sensor housings, impellers, and drone supports."
-      }
+  "kicker": "AREAS",
+  "title": "Application areas",
+  "subtitle": "Sample parts gallery grouped by industry.",
+  "back": "Back to home",
+  "groups": {
+    "oilGas": {
+      "title": "Oil & gas industry",
+      "short": "OIL & GAS",
+      "items": [
+        "Impellers (turbines)",
+        "Blades/vanes",
+        "Valves and flanges",
+        "Complex housings",
+        "Manifolds",
+        "Nozzles and injectors",
+        "Corrosion-resistant parts",
+        "Robot components"
+      ]
+    },
+    "automotive": {
+      "title": "Automotive / machinery",
+      "short": "AUTOMOTIVE / MACHINERY",
+      "items": [
+        "Jigs",
+        "Line tooling",
+        "Supports and brackets",
+        "Functional prototypes",
+        "Housings and validation parts",
+        "Internal engine components",
+        "Valves"
+      ]
+    },
+    "chemical": {
+      "title": "Chemical / food / pharmaceutical",
+      "short": "CHEMICAL / FOOD / PHARMA",
+      "items": [
+        "Sanitary components",
+        "CIP/SIP adapters",
+        "Special joints",
+        "Critical line spare parts"
+      ]
+    },
+    "aerospace": {
+      "title": "Aerospace / drones / technology",
+      "short": "AEROSPACE / DRONES / TECH",
+      "items": [
+        "Lightweight structures",
+        "Optimized supports",
+        "Metal sensor housings",
+        "Impellers",
+        "Drone supports"
+      ]
     }
   }
+}
 }
