@@ -124,7 +124,7 @@
     "placeholder": "Seleccioná una consulta para ver la respuesta.",
     "items": [
       {
-        "q": "¿La zona de fusión qué tamaño de pieza puede conformar (largo, ancho y alto)?",
+        "q": "¿De qué tamaño es el área de impresión máxima?",
         "a": "El área de impresión de nuestras impresoras 3D más grandes es de 26 cm de largo por 26 cm de ancho, con una altura máxima de 32 cm."
       },
       {

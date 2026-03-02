@@ -124,7 +124,7 @@
     "placeholder": "Select a question to see the answer.",
     "items": [
       {
-        "q": "What part size can the fusion area build (length, width, height)?",
+        "q": "What is the maximum print area size?",
         "a": "Our largest 3D printers have a 26 cm × 26 cm build area, with a maximum height of 32 cm."
       },
       {

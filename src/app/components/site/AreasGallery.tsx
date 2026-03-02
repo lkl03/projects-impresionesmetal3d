@@ -40,7 +40,7 @@ export default function AreasGallery() {
         title: t('groups.oilGas.title'),
         short: t('groups.oilGas.short'),
         items: (t.raw('groups.oilGas.items') as string[]) ?? [],
-        image: { src: '/services/oil-gas-alt.png', alt: t('groups.oilGas.short') }
+        image: { src: '/services/oil-gas-alt.jpeg', alt: t('groups.oilGas.short') }
       },
       {
         id: 'automotriz',
