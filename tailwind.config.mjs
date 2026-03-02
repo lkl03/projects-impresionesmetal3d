@@ -13,8 +13,8 @@ export default {
       },
       colors: {
         brand: {
-          navy: '#212121',
-          blue: '#999',
+          navy: '#083610',
+          blue: '#083610',
           sky: '#CCC',
           silver: '#B3B4B4'
         },

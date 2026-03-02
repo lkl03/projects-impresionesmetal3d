@@ -3,13 +3,12 @@
     "title": "Impresión Metal 3D",
     "description": "En Impresión Metal 3D, ofrecemos servicios de impresión 3D en metales, cotizamos tu proyecto sin cargo y lo fabricamos en tiempo récord con tecnología DMLS. Ofrecemos fabricar tu producto, post procesarlo y hasta envasarlo con tu logo."
   },
-  "Nav": {
+    "Nav": {
     "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "services": "Servicios y Aplicaciones",
-    "work": "Trabajos",
-    "faq": "Preguntas frecuentes",
-    "contact": "Contactanos"
+    "services": "Servicios y aplicaciones",
+    "areas": "Áreas de trabajo",
+    "work": "Work",
+    "faq": "FAQ"
   },
   "WhatsAppFloat": {
     "aria": "Abrir WhatsApp",
@@ -133,10 +132,6 @@
         "a": "Podemos utilizar polvos de acero como el acero inoxidable 316L, acero grado médico y acero maraging.\n\nNuestro fuerte es el titanio grado 5: resistente a la corrosión, a la temperatura sin deformaciones, soporta fuerzas de carga altas y es altamente biocompatible.\n\nAdemás, nuestras impresoras son compatibles para fabricar piezas en aluminio, cromo cobalto, aleaciones de cobre y aleaciones de níquel."
       },
       {
-        "q": "¿Qué tipo de piezas podemos fabricar?",
-        "a": "Podemos fabricar cualquier tipo de piezas según los requerimientos del cliente.\n\nAlgunos ejemplos son:\n\nPara la industria del petróleo y gas:\n● Impellers (turbinas)\n● Álabes\n● Válvulas y bridas\n● Carcazas complejas\n● Manifolds\n● Boquillas e inyectores\n● Piezas resistentes a la corrosión\n● Componentes de robots\n\nPara la industria automotriz/maquinaria:\n● Jigs\n● Herramientas de línea\n● Soportes y brackets\n● Prototipos funcionales\n● Carcasas y piezas de validación\n● Elementos internos de motores\n● Válvulas\n\nPara la industria química/alimenticia/farmacéutica:\n● Componentes sanitarios\n● Adaptadores CIP/SIP\n● Uniones especiales\n● Repuestos críticos de línea\n\nPara la industria aeroespacial/drones:\n● Estructuras livianas\n● Soportes optimizados\n● Carcazas metálicas de sensores\n● Impellers\n● Soportes para drones"
-      },
-      {
         "q": "¿Qué tolerancias y dimensiones mínimas de fabricación se puede ofrecer?",
         "a": "El espesor mínimo que recomendamos fabricar es de 1 mm.\n\nTolerancia dimensional: ±0,1 mm para dimensiones menores a 100 mm. Para dimensiones mayores, suele aplicarse una regla de ±0,1 % del tamaño nominal.\nEspesor mínimo de pared: 0,3 mm (aunque depende del material).\nDiámetro mínimo de agujero imprimible: generalmente 0,5 mm como mínimo confiable.\nRugosidad superficial: Ra ~ 8–15 µm en bruto (depende de altura de capa).\nPlanitud de superficies: ±0,2 mm."
       },
@@ -147,10 +142,6 @@
       {
         "q": "¿La ingeniería de la pieza la debe proporcionar el cliente?",
         "a": "Siempre recomendamos que el cliente proporcione la ingeniería a su gusto, para poder establecer requerimientos, controles de calidad, parámetros, etcétera.\n\nSin embargo, contamos con un equipo profesional de ingeniería in situ para poder asesorar al cliente en los proyectos."
-      },
-      {
-        "q": "¿Dónde puedo ver fotos y videos de piezas fabricadas?",
-        "a": "Podés ver fotos y videos de piezas fabricadas acá: https://www.bioprotece3d.com/es\n\nLa mayoría de piezas recientes están bajo acuerdo de confidencialidad, pero en esa web vas a encontrar las piezas que se pueden mostrar libres de derechos."
       }
     ]
   },

@@ -7,6 +7,8 @@ import { usePathname, useRouter } from '@/i18n/navigation';
 import { cn } from '@/app/lib/cn';
 import { getSectionIds, hash, type Locale } from '@/app/lib/sections';
 
+type NavLink = { href: string; label: string };
+
 export default function Header() {
   const t = useTranslations('Nav');
   const locale = useLocale() as Locale;
@@ -34,13 +36,18 @@ export default function Header() {
 
   const ids = useMemo(() => getSectionIds(locale), [locale]);
 
-  const links = useMemo(
+  // ✅ Home puede ser "/" o "/es" o "/en"
+  const isHome = pathname === '/' || pathname === `/${locale}`;
+  const isAreas = pathname === '/areas' || pathname === `/${locale}/areas`;
+
+  const links: NavLink[] = useMemo(
     () => [
       { href: hash(ids.home), label: t('home') },
-      { href: hash(ids.about), label: t('about') },
       { href: hash(ids.services), label: t('services') },
+      // 👇 “Áreas de trabajo” va como página aparte (no hash)
+      { href: '/areas', label: t('areas') },
       { href: hash(ids.work), label: t('work') },
-      { href: hash(ids.faq), label: t('faq') },
+      { href: hash(ids.faq), label: t('faq') }
     ],
     [t, ids]
   );
@@ -52,25 +59,27 @@ export default function Header() {
     router.replace(pathname, { locale: next });
   }
 
-  // ✅ Home puede ser "/" o "/es" o "/en" dependiendo de tu config.
-  const isHome = pathname === '/' || pathname === `/${locale}`;
-
   function onNavClick(href: string) {
     setMobileOpen(false);
 
-    // href viene como "#faq", "#trabajos", etc.
+    // Página: /areas
+    if (href === '/areas') {
+      router.push('/areas');
+      return;
+    }
+
+    // Hashes: "#faq", "#trabajos", etc.
     const hashOnly = href.startsWith('#') ? href : `#${href}`;
 
     if (isHome) {
-      // En home: solo actualizamos el hash
       requestAnimationFrame(() => {
         window.location.hash = hashOnly.replace('#', '');
       });
       return;
     }
 
-    // En cualquier otra página (ej: /areas): volvemos a la home con hash
-    router.push('/' + hashOnly); // => "/#faq" (locale-aware via next-intl router)
+    // Desde /areas u otra página: volver a home con hash
+    router.push('/' + hashOnly); // => "/#faq" (locale-aware por next-intl)
   }
 
   return (
@@ -85,7 +94,6 @@ export default function Header() {
       <div className="mx-auto w-full max-w-screen-2xl 3xl:max-w-[1760px] px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         {/* DESKTOP (>= sm): logo centrado + nav debajo */}
         <div className="hidden sm:flex flex-col items-center gap-3">
-          {/* ✅ Logo: NO usar <a href="#home"> porque en /areas te queda /areas#home */}
           <button
             type="button"
             onClick={() => onNavClick(hash(ids.home))}
@@ -112,21 +120,46 @@ export default function Header() {
               'motion-safe:animate-fade-in-up'
             )}
           >
-            {/* ✅ Desktop links: usar button para que SIEMPRE ejecute onNavClick */}
-            {links.map((l) => (
-              <button
-                key={l.href}
-                type="button"
-                onClick={() => onNavClick(l.href)}
-                className={cn(
-                  'cursor-pointer relative py-1 transition-opacity hover:opacity-90',
-                  'after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:transition-all after:duration-300',
-                  scrolled ? 'after:bg-brand-navy/40 hover:after:w-full' : 'after:bg-white/50 hover:after:w-full'
-                )}
-              >
-                {l.label}
-              </button>
-            ))}
+            {links.map((l) => {
+              const isPageLink = l.href === '/areas';
+              const activeAreas = isPageLink && isAreas;
+
+              // ✅ Para UX: "Áreas de trabajo" va como pill/CTA sutil
+              if (isPageLink) {
+                return (
+                  <button
+                    key={l.href}
+                    type="button"
+                    onClick={() => onNavClick(l.href)}
+                    className={cn(
+                      'cursor-pointer rounded-full px-4 py-2 text-sm font-medium',
+                      'border transition-colors',
+                      scrolled
+                        ? 'bg-brand-navy text-white border-brand-navy hover:bg-brand-navy/90'
+                        : 'bg-white/10 text-white border-white/20 hover:bg-white/15',
+                      activeAreas ? (scrolled ? 'ring-2 ring-brand-sky/40' : 'ring-2 ring-white/35') : ''
+                    )}
+                  >
+                    {l.label}
+                  </button>
+                );
+              }
+
+              return (
+                <button
+                  key={l.href}
+                  type="button"
+                  onClick={() => onNavClick(l.href)}
+                  className={cn(
+                    'cursor-pointer relative py-1 transition-opacity hover:opacity-90',
+                    'after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:transition-all after:duration-300',
+                    scrolled ? 'after:bg-brand-navy/40 hover:after:w-full' : 'after:bg-white/50 hover:after:w-full'
+                  )}
+                >
+                  {l.label}
+                </button>
+              );
+            })}
 
             <span className={cn('mx-2 h-4 w-px', divider)} />
 
@@ -175,7 +208,6 @@ export default function Header() {
 
         {/* MOBILE (< sm): logo izquierda + ES/EN visible + hamburger derecha */}
         <div className="sm:hidden flex items-center justify-between gap-3">
-          {/* ✅ Mobile logo también debe usar onNavClick */}
           <button
             type="button"
             onClick={() => onNavClick(hash(ids.home))}
@@ -188,26 +220,19 @@ export default function Header() {
                 alt="Bioprotece3D"
                 fill
                 priority
-                className={cn(
-                  'object-contain transition-opacity duration-300',
-                  scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
-                )}
+                className={cn('object-contain transition-opacity duration-300', scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100')}
               />
               <Image
                 src="/logo-color.png"
                 alt="Bioprotece3D"
                 fill
                 priority
-                className={cn(
-                  'object-contain transition-opacity duration-300',
-                  scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                )}
+                className={cn('object-contain transition-opacity duration-300', scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none')}
               />
             </span>
           </button>
 
           <div className="flex items-center gap-3">
-            {/* Language switch always visible */}
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -248,39 +273,17 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Hamburger */}
             <button
               type="button"
               aria-label={mobileOpen ? 'Cerrar menú' : 'Abrir menú'}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
-              className={cn(
-                'cursor-pointer rounded-full p-2 transition-colors',
-                scrolled ? 'hover:bg-black/5' : 'hover:bg-white/10'
-              )}
+              className={cn('cursor-pointer rounded-full p-2 transition-colors', scrolled ? 'hover:bg-black/5' : 'hover:bg-white/10')}
             >
               <div className="grid gap-1.5">
-                <span
-                  className={cn(
-                    'block h-0.5 w-6 transition-all duration-300',
-                    scrolled ? 'bg-brand-navy' : 'bg-white',
-                    mobileOpen ? 'translate-y-2 rotate-45' : ''
-                  )}
-                />
-                <span
-                  className={cn(
-                    'block h-0.5 w-6 transition-all duration-300',
-                    scrolled ? 'bg-brand-navy' : 'bg-white',
-                    mobileOpen ? 'opacity-0' : 'opacity-100'
-                  )}
-                />
-                <span
-                  className={cn(
-                    'block h-0.5 w-6 transition-all duration-300',
-                    scrolled ? 'bg-brand-navy' : 'bg-white',
-                    mobileOpen ? '-translate-y-2 -rotate-45' : ''
-                  )}
-                />
+                <span className={cn('block h-0.5 w-6 transition-all duration-300', scrolled ? 'bg-brand-navy' : 'bg-white', mobileOpen ? 'translate-y-2 rotate-45' : '')} />
+                <span className={cn('block h-0.5 w-6 transition-all duration-300', scrolled ? 'bg-brand-navy' : 'bg-white', mobileOpen ? 'opacity-0' : 'opacity-100')} />
+                <span className={cn('block h-0.5 w-6 transition-all duration-300', scrolled ? 'bg-brand-navy' : 'bg-white', mobileOpen ? '-translate-y-2 -rotate-45' : '')} />
               </div>
             </button>
           </div>
@@ -293,11 +296,7 @@ export default function Header() {
           type="button"
           aria-label="Cerrar menú"
           onClick={() => setMobileOpen(false)}
-          className={cn(
-            'absolute inset-0 h-full w-full transition-opacity duration-300',
-            mobileOpen ? 'opacity-100' : 'opacity-0',
-            'bg-black/40'
-          )}
+          className={cn('absolute inset-0 h-full w-full transition-opacity duration-300', mobileOpen ? 'opacity-100' : 'opacity-0', 'bg-black/40')}
         />
 
         <aside
@@ -323,17 +322,23 @@ export default function Header() {
 
           <nav className="px-5 py-6">
             <ul className="flex flex-col gap-4">
-              {links.map((l) => (
-                <li key={l.href}>
-                  <button
-                    type="button"
-                    onClick={() => onNavClick(l.href)}
-                    className="cursor-pointer w-full text-left font-display text-lg text-brand-navy hover:opacity-80 transition-opacity"
-                  >
-                    {l.label}
-                  </button>
-                </li>
-              ))}
+              {links.map((l) => {
+                const isPageLink = l.href === '/areas';
+                return (
+                  <li key={l.href}>
+                    <button
+                      type="button"
+                      onClick={() => onNavClick(l.href)}
+                      className={cn(
+                        'cursor-pointer w-full text-left font-display text-lg hover:opacity-80 transition-opacity',
+                        isPageLink ? 'text-brand-navy font-semibold' : 'text-brand-navy'
+                      )}
+                    >
+                      {l.label}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </aside>

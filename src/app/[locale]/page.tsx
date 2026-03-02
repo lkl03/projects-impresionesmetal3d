@@ -15,7 +15,6 @@ export default function HomePage({params}: {params: Promise<{locale: string}>}) 
   return (
     <main>
       <Hero />
-      <About />
       <Services />
       <WorkGallery />
       <Faq />

@@ -4,13 +4,12 @@
     "description": "At Metal 3D Printing, we provide metal 3D printing services. We quote your project free of charge and manufacture it in record time using DMLS technology. We can produce your product, post-process it, and even package it with your logo."
   },
   "Nav": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services & Applications",
-    "work": "Work",
-    "faq": "FAQ",
-    "contact": "Contact"
-  },
+  "home": "Home",
+  "services": "Services & applications",
+  "areas": "Work areas",
+  "work": "Work",
+  "faq": "FAQ"
+},
   "WhatsAppFloat": {
     "aria": "Open WhatsApp",
     "title": "Message us",
@@ -133,10 +132,6 @@
         "a": "We can use steel powders such as stainless steel 316L, medical-grade steel, and maraging steel.\n\nOur strength is Grade 5 titanium: corrosion-resistant, stable at high temperatures without deformation, capable of withstanding high loads, and highly biocompatible.\n\nIn addition, our printers are compatible with aluminum, cobalt-chrome, copper alloys, and nickel alloys."
       },
       {
-        "q": "What kinds of parts can you manufacture?",
-        "a": "We can manufacture any type of part according to the customer’s requirements.\n\nExamples include:\n\nFor the oil & gas industry:\n● Impellers (turbines)\n● Blades/vanes\n● Valves and flanges\n● Complex housings\n● Manifolds\n● Nozzles and injectors\n● Corrosion-resistant parts\n● Robot components\n\nFor automotive / machinery:\n● Jigs\n● Line tooling\n● Supports and brackets\n● Functional prototypes\n● Housings and validation parts\n● Internal engine elements\n● Valves\n\nFor chemical / food / pharmaceutical:\n● Sanitary components\n● CIP/SIP adapters\n● Special joints\n● Critical line spare parts\n\nFor aerospace / drones:\n● Lightweight structures\n● Optimized supports\n● Metal sensor housings\n● Impellers\n● Drone supports"
-      },
-      {
         "q": "What tolerances and minimum dimensions can you offer?",
         "a": "The minimum thickness we recommend manufacturing is 1 mm.\n\nDimensional tolerance: ±0.1 mm for dimensions under 100 mm. For larger dimensions, a rule of ±0.1% of nominal size is typically applied.\nMinimum wall thickness: 0.3 mm (depends on the material).\nMinimum printable hole diameter: generally 0.5 mm as a reliable minimum.\nSurface roughness: Ra ~ 8–15 µm as-printed (depends on layer height).\nFlatness: ±0.2 mm."
       },
@@ -147,10 +142,6 @@
       {
         "q": "Does the customer need to provide the part engineering?",
         "a": "We always recommend that the customer provides the engineering/design as they want it, so we can define requirements, quality controls, parameters, etc.\n\nHowever, we have an on-site engineering team to advise the customer throughout the project."
-      },
-      {
-        "q": "Where can I see photos and videos of manufactured parts?",
-        "a": "You can see photos and videos of manufactured parts here: https://www.bioprotece3d.com/es\n\nMost recent parts are under confidentiality agreements, but on that website you’ll find the parts that can be shown."
       }
     ]
   },
